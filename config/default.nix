@@ -1,5 +1,9 @@
 {self, ...}:
 {
+	imports = [
+		./plugins	
+	];
+	config = {
 	keymaps = [
 		{
 			action = "<cmd>Telescope find_files<cr>";
@@ -7,47 +11,20 @@
 			mode = "n";
 		}
 	];
-	clipboard.register = "unnamedplus";
 	globals.mapleader = " ";
-
 	colorschemes.nord.enable = true;
+	opts = {
+      autoindent = true;
+      cursorline = true;
+      tabstop = 2;
+      shiftwidth = 2;
+      wrap = true;
+      linebreak = true;
 
-	plugins = {
-		telescope.enable = true;
-		treesitter = {
-			enable = true;
-		};
-		lualine = {
-			enable = true;
-		};
-		lsp = {
-			enable = true;
-			servers = {
-				nil-ls.enable = true;
-				rust-analyzer = {
-					enable = true;
-					installCargo = false;
-					installRustc = false;
-				};
-				lua-ls.enable = true;
-				marksman.enable = true;
-			};
-		};
-		startify = {
-			enable = true;
-			settings = {
-			  change_to_dir = false;
-			  custom_header = [
-				"███╗   ███╗███████╗ ██████╗ ██╗    ██╗ ██╗   ██╗██╗███╗   ███╗"
-				"████╗ ████║██╔════╝██╔═══██╗██║    ██║ ██║   ██║██║████╗ ████║"
-				"██╔████╔██║█████╗  ██║   ██║██║ █╗ ██║ ██║   ██║██║██╔████╔██║"
-				"██║╚██╔╝██║██╔══╝  ██║   ██║██║███╗██║ ╚██╗ ██╔╝██║██║╚██╔╝██║"
-				"██║ ╚═╝ ██║███████╗╚██████╔╝╚███╔███╔╝  ╚████╔╝ ██║██║ ╚═╝ ██║"
-				"╚═╝     ╚═╝╚══════╝ ╚═════╝  ╚══╝╚══╝    ╚═══╝  ╚═╝╚═╝     ╚═╝"
-			  ];
-			  fortune_use_unicode = true;
-			};
-		};
+      mouse = "";
+      number = true;
+      relativenumber = true;
+    };
 	};
 }
 
