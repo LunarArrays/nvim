@@ -12,7 +12,11 @@
 		}
 	];
 	globals.mapleader = " ";
-	colorschemes.nord.enable = true;
+	
+	colorschemes.base16 = {
+		enable = true;
+		colorscheme = "rose-pine-moon";
+	};
 	opts = {
       autoindent = true;
       cursorline = true;
