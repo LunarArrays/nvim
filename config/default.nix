@@ -13,10 +13,7 @@
 	];
 	globals.mapleader = " ";
 	
-	colorschemes.base16 = {
-		enable = true;
-		colorscheme = "nord";
-	};
+	colorschemes.nord = true;
 	opts = {
       autoindent = true;
       cursorline = true;
