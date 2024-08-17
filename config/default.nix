@@ -15,7 +15,7 @@
 	
 	colorschemes.base16 = {
 		enable = true;
-		colorscheme = "rose-pine-moon";
+		colorscheme = "nord";
 	};
 	opts = {
       autoindent = true;
