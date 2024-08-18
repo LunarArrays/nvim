@@ -13,7 +13,7 @@
 	];
 	globals.mapleader = " ";
 	
-	colorschemes.nord = true;
+	colorschemes.nord.enable = true;
 	opts = {
       autoindent = true;
       cursorline = true;
